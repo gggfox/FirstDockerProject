@@ -1,0 +1,22 @@
+Create a virtual environment in python named env
+$ python -m venv env
+
+Activate virtual environment
+$ source env/bin/activate
+
+install modules in our virtual environment
+$ pip install flask uwsgi
+
+$ pip freeze > requirements.txt
+
+
+#command to see files in virtual environment
+$ pip list
+
+$ export FLASK_APP=run.py
+$ export FLASK_ENV=development
+
+$ sudo systemctl start docker
+$ sudo systemctl enable docker
+$ docker-compose build 
+$ docker-compose up
